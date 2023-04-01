@@ -1,0 +1,21 @@
+<p><mat-toolbar color="primary">
+    <button (click)="menuToggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My Dasboard</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <span class='material-icons'>info</span>
+    </button>
+ 
+    <button mat-button [matMenuTriggerFor]="menu"><span class="material-icons">person_add_alt_1</span></button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><mat-icon>logout</mat-icon>sign out</button>
+
+</mat-menu>
+
+    
+  </mat-toolbar></p>
